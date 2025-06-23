@@ -94,8 +94,11 @@ python-bootcamp-project/
    ```
 
 3. **Set up credentials**
-   - Copy `credentials.yml.example` to `credentials.yml`
-   - Add your OpenAI and YouTube API keys
+   Create a `credentials.yml` file in the project root with your API keys:
+   ```yaml
+   youtube: 'your-youtube-api-key-here'
+   openai: 'your-openai-api-key-here'
+   ```
 
 4. **Run the application**
    ```bash
