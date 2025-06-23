@@ -1,21 +1,44 @@
-# 🤖 AI Agent Engineering Template
+# 🤖 Agent Engineering Bootcamp - YouTube Channel Agent
 
-**Ready-to-use template for building AI agents and applications.** Choose your stack and start building immediately!
+**Week 2 Homework Submission: Two-Tool Agent Implementation**
 
-> 🚀 **Quick Start**: Click "Use this template" above to create your new AI project!
+> 🎯 **Main Project**: [`python-bootcamp-project/`](./python-bootcamp-project/) - YouTube Channel Agent MVP
+> 
+> 📝 **Assignment**: Build an agent with two tools 
 
-## 🎯 Choose Your Stack
+## 🏆 Homework Submission: YouTube Channel Agent
 
-### 🚀 TypeScript + Next.js (`ts-bootcamp-project/`)
-- **Framework**: Next.js 14 with App Router
-- **AI Integration**: Vercel AI SDK with OpenAI
-- **UI**: Shadcn UI + Tailwind CSS
-- **Perfect for**: Web apps, chatbots, user-facing agents
+### 📍 **Primary Focus**: `python-bootcamp-project/`
 
-### 🐍 Python + LiteLLM (`python-bootcamp-project/`)
-- **Package Manager**: uv (fast & modern)
-- **AI Integration**: LiteLLM (100+ LLM providers)
-- **Perfect for**: Scripts, APIs, data processing, backend agents
+**Two-Tool Architecture:**
+1. **🔍 YouTube Content Crawler** - Discovers and extracts content from YouTube channels
+2. **🧠 RAG Knowledge Assistant** - Provides intelligent Q&A using retrieved video content
+
+**Key Features:**
+- ✅ Semantic search across video transcripts
+- ✅ History-aware conversation memory  
+- ✅ Source attribution with video links
+- ✅ Interactive Streamlit web interface
+- ✅ Pre-built MCP development knowledge base
+
+**[📖 Full Documentation →](./python-bootcamp-project/README.md)**
+
+---
+
+## 🎯 Repository Structure
+
+### 🐍 **Python Project** (Main Submission)
+**Location**: `python-bootcamp-project/`
+- **Purpose**: Week 2 homework - Two-tool agent system
+- **Status**: ✅ Complete with comprehensive documentation
+- **Tech Stack**: Python, Streamlit, LangChain, ChromaDB, OpenAI
+- **Features**: YouTube content analysis + RAG Q&A system
+
+### 🚀 **TypeScript Project** (Template)
+**Location**: `ts-bootcamp-project/`
+- **Purpose**: Template for future TypeScript projects
+- **Status**: 🚧 Template/boilerplate code
+- **Tech Stack**: Next.js, Vercel AI SDK, Shadcn UI
 
 ## 📋 Template Usage
 
@@ -32,53 +55,33 @@ rm -rf python-bootcamp-project/  # If using TypeScript
 rm -rf ts-bootcamp-project/      # If using Python
 ```
 
-## 🛠️ Setup Instructions
+## 🛠️ Quick Start (Python Project)
 
 ### Prerequisites
-- Node.js (v18 or higher)
-- Python (v3.8 or higher)
+- Python 3.12+
 - OpenAI API key
+- YouTube Data API v3 key
 
-### TypeScript/Next.js Setup
+### Setup & Run
+```bash
+# Navigate to main project
+cd python-bootcamp-project
 
-1. Navigate to the TypeScript project:
-   ```bash
-   cd ts-bootcamp-project
-   ```
+# Install dependencies  
+uv sync
 
-2. Install dependencies:
-   ```bash
-   pnpm install
-   ```
+# Configure credentials
+cp credentials.yml.example credentials.yml
+# Add your API keys to credentials.yml
 
-3. Create `.env.local` file:
-   ```bash
-   OPENAI_API_KEY=your-actual-api-key-here
-   ```
+# Run the application
+uv run streamlit run youtube_agent_mvp.py
+```
 
-4. Run the development server:
-   ```bash
-   pnpm run dev
-   ```
+**[📖 Detailed Setup Instructions →](./python-bootcamp-project/README.md)**
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-### Python Setup
-
-1. Navigate to the Python project:
-   ```bash
-   cd python-bootcamp-project
-   ```
-
-2. Create `.env` file:
-   ```bash
-   OPENAI_API_KEY=your-actual-api-key-here
-   ```
-
-3. Run the Python script:
-   ```bash
-   uv run python main.py
-   ```
+### TypeScript Project (Template Only)
+The `ts-bootcamp-project/` contains template code for future projects. See the project README for setup instructions if needed.
 
 ## 🔑 API Key Setup
 
